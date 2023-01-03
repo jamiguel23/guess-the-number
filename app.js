@@ -10,14 +10,14 @@ let num = Math.floor(Math.random() * 10) +1;
 
 
 function guessNum() {
+  console.log(num)
 
-  let tries = 3
-  let count = 3
-  // console.log(num)
+  let tries = Infinity
+  let count = Infinity
   let attempts = 0
 
   for (let i = 0; i < tries; i++) {
-    let guess = prompt("guess a number between 1 and 10, you have 3 tries");
+    let guess = prompt("guess a number between 1 and 10");
 
     if (num == guess) {
       attempts++
@@ -59,9 +59,9 @@ function guessNum() {
 
     } 
     
-    if(attempts === tries) {
-      alert("Sorry! Ran out of tries.  You guessed " + guess + " and the number was " + num);
-    }
+    // if(attempts === tries) {
+    //   alert("Sorry! Ran out of tries.  You guessed " + guess + " and the number was " + num);
+    // }
   }
 }
 
