@@ -23,9 +23,16 @@ function guessNum() {
       console.log(attempts)
       alert("Got it! It took you " + attempts + " attempts");
       break
-    } else if( guess> num) {
 
-    } else {
+    } else if(guess> num) {
+      alert('guess is to HIGH. try again')
+
+    }else if(guess< num) {
+      alert('guess is to LOW. try again')
+
+    } 
+    
+    else {
       alert("Sorry!  You guessed " + guess + " and the number was " + num);
     }
   }
