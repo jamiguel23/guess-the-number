@@ -18,24 +18,18 @@ function guessNum() {
   let gotIt = false
 
   while (!gotIt) {
+    counter++
     if (num == guess) {
-      if (counter == 0) {
-        counter++
+      if (counter == 1) {
         alert("Got it! it took you " + counter + " time to get it right");
         gotIt = true
       } else {
-
-        counter++
         alert("Got it! it took you " + counter + " times to get it right");
         gotIt = true
       }
     } else if (guess > num) {
-      counter++
-      // alert('Too high! Guess again.')
       guess = prompt("Too high. Guess again.");
     } else if (guess < num) {
-      counter++
-      // alert('Too low! Guess again.')
       guess = prompt("Too low! Guess again.");
     }
 
