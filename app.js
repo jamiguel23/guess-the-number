@@ -31,12 +31,12 @@ function guessNum() {
       }
     } else if (guess > num) {
       counter++
-      alert('Too high! Guess again.')
-      guess = prompt("guess a number between 1 and 10");
+      // alert('Too high! Guess again.')
+      guess = prompt("Too high. Guess again.");
     } else if (guess < num) {
       counter++
-      alert('Too low! Guess again.')
-      guess = prompt("guess a number between 1 and 10");
+      // alert('Too low! Guess again.')
+      guess = prompt("Too low! Guess again.");
     }
 
   }
