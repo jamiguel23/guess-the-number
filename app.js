@@ -4,8 +4,8 @@
 
 // let num = Math.floor(Math.random() * 11);
 
-// let num = Math.floor(Math.random() * 10) + 1;
-let num = 2
+let num = Math.floor(Math.random() * 10) + 1;
+// let num = 2
 
 
 
